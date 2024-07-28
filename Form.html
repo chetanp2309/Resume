@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+        label {
+            
+            margin-bottom: 5px;
+			padding:3px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="search"],
+        input[type="color"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: #fff;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+        }
+        input[type="reset"] {
+            background-color: #dc3545;
+        }
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h3>Student Registration Form</h3>
+        <label>Name:</label>
+        <input type="text" name="name" placeholder="Enter Your Name">
+        
+        <label>Mobile No:</label>
+        <input type="number" name="mobile_no" placeholder="Enter 10 Digit Number">
+        
+        <label>Address:</label>
+        <select>
+            <option>Select</option>
+            <option>Nashik</option>
+            <option>Pune</option>
+            <option>Mumbai</option>
+        </select>
+        
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"><label>Male</label>
+        <input type="radio" name="gender" value="Female"><label>Female</label>
+		<br>
+        <br>
+        
+        <label>Hobbies:</label>
+        <input type="checkbox" name="Read" value="Read"><label>Read</label>
+        <input type="checkbox" name="Dance" value="Dance"><label>Dance</label>
+        <input type="checkbox" name="Music" value="Music"><label>Music</label>
+        <br><br>
+        <label>Search:</label>
+        <input type="search" name="search">
+        
+        <label>Color:</label>
+        <input type="color" name="color">
+        
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="clear" value="Clear">
+    </form>
+</body>
+</html>
